@@ -1,3 +1,8 @@
+\*
+Name: Jay Buddhdev
+SID: 200384715
+School: University Of Regina (UoR)
+*/
 #include<iostream>
 #include<ctime>
 #include<stdlib.h>
