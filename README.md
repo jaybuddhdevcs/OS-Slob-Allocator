@@ -16,7 +16,7 @@ With this slob allocator, I plan to instal the suitable Operating system on the 
 ![Raspberry Pi 3](https://user-images.githubusercontent.com/63517656/79056088-ecf42b80-7c0f-11ea-9411-31414b6f03f9.png)
 
 ## Sample run:
-![Graphical Comparision](https://user-images.githubusercontent.com/63517656/79056220-3d1fbd80-7c11-11ea-9a24-4206d39e6a09.png)
+<img width="907" alt="Graphical Comparison" src="https://user-images.githubusercontent.com/63517656/79056479-43636900-7c14-11ea-83a3-2d69af3ecab1.png">
 
 ## Pre-requisite for running this program:
 1.	A windows machine.
