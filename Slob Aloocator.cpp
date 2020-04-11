@@ -6,7 +6,7 @@
 #include<graphics.h>
 
 using namespace std;
-
+//Pre defined variables
 #define LIST1_MAX_SIZE 256
 #define LIST2_MAX_SIZE 1024
 #define LIST3_MAX_SIZE 5000
@@ -56,7 +56,7 @@ class SinglyList{
 		size=0;
 	}
 	public:
-		//Cnstructors
+		//Constructors
 		SinglyList()
 		{
 			head=NULL;
@@ -297,7 +297,7 @@ class SinglyList{
 		head=prev;
 	}
 	
-	// Calculating internal fragmentation
+	// Calculating internal fragmentation. Reusable for process.
 	int Internal_Fragmentation()
 	{
 		int cal=0;
@@ -445,7 +445,8 @@ int main()
 	// Applying First fit strategy
 	cout<<endl<<endl<<"\t\t\t\t\t * FIRST FIT * "<<endl<<endl;
 	cout<<"\t\t\t Slob Allocator's list of Free Blocks Before First Fit Allocation"<<endl;
-	cout<<"List 1 Free Blocks : "<<endl;// Displaying free blocks for 3 lists
+	// Displaying free blocks for 3 lists
+	cout<<"List 1 Free Blocks : "<<endl;
 	l1.Free_Blocks();
 	cout<<"List 2 Free Blocks : "<<endl;
 	l2.Free_Blocks();
@@ -781,6 +782,8 @@ int main()
 	initwindow(1000,1000);
 	char arr[10]={"First Fit"},arr1[10]={"Best Fit"},arr2[10]={"Worst Fit"},arr3[]={"INTERNAL FRAGMENTATION"},arr4[]="0",arr5[]="1000",arr6[]={"2000"};
 	char arr7[]={"NO. OF PROCESSES IN WAITING QUEUE"},arr8[]={"0.1"},arr9[]={"10"},arr10[]={"20"},arr11[]={"TIME COMLEXITY"},arr12[]={"0.2"};
+	
+	\\first graph parameters
 	outtextxy(100,305,arr);
 	outtextxy(200,305,arr1);
 	outtextxy(300,305,arr2);
@@ -797,6 +800,7 @@ int main()
 	bar(300,a3,350,300);
 	line(100,300,400,300);
 	
+	\\second graph parameters
 	outtextxy(500,305,arr);
 	outtextxy(600,305,arr1);
 	outtextxy(700,305,arr2);
@@ -813,6 +817,7 @@ int main()
 	bar(700,ww,750,300);
 	line(480,300,800,300);
 	
+	\\third graph parameters
 	outtextxy(300,605,arr);
 	outtextxy(400,605,arr1);
 	outtextxy(500,605,arr2);
@@ -828,7 +833,9 @@ int main()
 	setfillstyle(SOLID_FILL,YELLOW);
 	bar(500,tw,550,600);
 	line(280,600,600,600);
+	\\program will be on hold unless user press any key.
 	getch();
+	\\closing of graph. And releasing memory.
 	closegraph();
 	
 	return(0);
