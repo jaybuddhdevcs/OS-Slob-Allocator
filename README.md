@@ -1,5 +1,8 @@
 # OS-Slob-Allocator
-Slob Allocator simulation in c++.
+Slob Allocator simulation in c++ by:
+Name: Jay Buddhdev
+SID: 200384715
+School: University of Regina (UoR)
 
 The SLOB (Simple list of blocks) allocator is one of three available memory allocators in the Linux kernel. (The other two are SLAB and SLUB.) The SLOB allocator is designed to require little memory for the implementation and housekeeping, for use in small systems such as embedded systems. Unfortunately, a major limitation of the SLOB allocator is that it suffers greatly from internal fragmentation.
 
